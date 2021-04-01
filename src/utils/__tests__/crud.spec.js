@@ -49,7 +49,7 @@ describe('crud controllers', () => {
 
       const res = {
         status(status) {
-          expect(status).toBe(400)
+          expect(status).toBe(404)
           return this
         },
         end() {
@@ -106,7 +106,7 @@ describe('crud controllers', () => {
 
       const res = {
         status(status) {
-          expect(status).toBe(201)
+          expect(status).toBe(200)
           return this
         },
         json(results) {
@@ -129,7 +129,7 @@ describe('crud controllers', () => {
 
       const res = {
         status(status) {
-          expect(status).toBe(201)
+          expect(status).toBe(200)
           return this
         },
         json(results) {
